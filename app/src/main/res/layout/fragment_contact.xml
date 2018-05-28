@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar_upload_image"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:indeterminate="false"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_input"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <Spinner
+                android:id="@+id/contact_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8" />
+
+            <android.support.design.widget.VisibilityAwareImageButton
+                android:id="@+id/contact_ler_imagem"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/photo" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/contact_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView_contact" />
+
+    <ListView
+        android:id="@+id/contact_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_image_view"
+        android:choiceMode="singleChoice" />
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView_message_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <EditText
+                android:id="@+id/contact_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="7"
+                android:hint="@string/mensagem"
+                android:inputType="text"
+                android:padding="10dp" />
+
+            <android.support.design.widget.VisibilityAwareImageButton
+                android:id="@+id/contact_postar_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:src="@drawable/send" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

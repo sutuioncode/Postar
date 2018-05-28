@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="mz.co.example.nhane.postar.LoginActivity">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar_login"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:gravity="center_horizontal"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="45sp" />
+
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password_login"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/palavra_chave"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/entrar_login"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/password_login"
+        android:onClick="fazerLogin"
+        android:text="@string/entrar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/registar_login"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entrar_login"
+        android:layout_centerHorizontal="true"
+        android:onClick="irParaRegisto"
+        android:text="@string/registar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/anonimo_login"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registar_login"
+        android:layout_centerHorizontal="true"
+        android:onClick="irParaLoginAnonimo"
+        android:text="Entrar em anomimato"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+</RelativeLayout>

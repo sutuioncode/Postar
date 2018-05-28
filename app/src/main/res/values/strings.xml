@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Postar</string>
+    <string name="perfil">Perfil</string>
+    <string name="sign_out">Sign out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_postar_messagem">PostarMessagemActivity</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="enviar">Enviar</string>
+    <string name="registar">Criar uma nova conta</string>
+    <string name="entrar">Entrar</string>
+    <string name="e_mail">E-mail</string>
+    <string name="palavra_chave">Palavra Chave</string>
+    <string name="confirmar_a_palavra_chave">Confirmar a Palavra chave</string>
+    <string name="username">Username</string>
+    <string name="imagem">Imagem</string>
+    <string name="nome">Nome</string>
+    <string name="comentario">comentario</string>
+
+</resources>

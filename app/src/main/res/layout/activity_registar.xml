@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mz.co.example.nhane.postar.RegistarActivity">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar_registar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar_registar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/registar"
+        android:textSize="45sp" />
+
+
+    <EditText
+        android:id="@+id/username_registar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/username_registar"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password_registar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/email_register"
+        android:ems="10"
+        android:hint="@string/palavra_chave"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password_confirmar_registar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/password_registar"
+        android:ems="10"
+        android:hint="@string/confirmar_a_palavra_chave"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_registar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_confirmar_registar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:onClick="efectuarRegisto"
+        android:text="@string/registar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/colorPrimary" />
+</RelativeLayout>
